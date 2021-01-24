@@ -1,0 +1,27 @@
+{
+    "label": {
+        "de": "Custom dropdown Menü",
+        "en": "Custom dropdown menu"
+    },
+    "license": "proprietary",
+    "link": "https://www.bay20.com",
+    "author": "M. M. (info@bay20.com)",
+
+    "currentVersion": "1.0.0",
+
+    "changelog": {
+        "de": {
+        	"1.0.0": "showing dropdown menu"
+        },
+        "en": {
+        	"1.0.0": "showing dropdown menu"
+        }
+    },
+
+    "compatibility": {
+        "minimumVersion": "5.0.0",
+        "maximumVersion": null,
+        "blacklist": [
+        ]
+    }
+}

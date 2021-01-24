@@ -1,0 +1,164 @@
+.ipadMenuFix{
+     -webkit-transform: translate3d(0, 0, 0);
+     -o-transform: translate3d(0, 0, 0);
+     transform: translate3d(0, 0, 0);
+}
+
+.navigation-main ul li ul {
+	display: none;
+}
+
+.navigation-main li{
+	list-style:none;
+}
+
+.navigation-main .navigation--entry:hover a{
+	background: @custom-bg-color-hover-top;
+	.primary-gradient();
+	font-weight: 600;
+	color: #fff !important;
+	cursor: pointer;
+}
+
+/* Drop down menu */
+.navigation-main li ul {
+	position:fixed;
+	margin-top:0px;
+	z-index: 2000;
+}
+.navigation-main li:hover ul {
+	display: block;
+	position: fixed;
+	background: @custom-bg-color-sub;
+	width:@custom-submenu-width*1px;
+	z-index:2000;
+	cursor: pointer;
+}
+.navigation-main ul li.dropactive:hover ul li {
+	background: @custom-bg-color-sub;
+	cursor: pointer;
+}
+.navigation-main ul li.dropactive:hover ul li:hover {
+	background:@custom-bg-color-sub;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive:hover ul li a {
+	.unitize-padding(0, 0, 0, 8);
+	border-bottom:1px solid @custom-border-color;
+	border-left:1px solid @custom-border-color;
+	border-right:1px solid @custom-border-color;
+	background: @custom-bg-color-sub;
+	color:#fff;
+	display:block;
+	width:@custom-submenu-width*1px;
+	font-weight:bold;
+	line-height:@custom-submenu-height*1px;
+	height:@custom-submenu-height*1px;
+	cursor: pointer;
+	font-size: @custom-submenu-font-size*1rem;
+}
+
+.navigation-main ul li.dropactive.pullLeft:hover li ul {
+	left:@custom-submenu-width*-1px;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive:hover ul li:first-child a {
+	border-top:1px solid @custom-border-color;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive:hover ul li:first-child li a {
+	border-top:0 none;
+	background: @custom-bg-color-sub;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive:hover ul li ul li:first-child a {
+	border-top:1px solid @custom-border-color;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive:hover ul li ul li ul li:first-child a {
+	border-top:1px solid @custom-border-color;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive:hover ul li:last-child a {
+	border-bottom:1px solid @custom-border-color;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive ul li:hover{
+	height:@custom-submenu-height*1px;
+	line-height:@custom-submenu-height*1px;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive ul li:hover a{
+	background: @custom-bg-color-hover-sub;
+	border-right:1px solid @custom-border-color;
+	border-left: 1px solid @custom-border-color;
+	width:@custom-submenu-width*1px;
+	height:@custom-submenu-height*1px;
+	line-height:@custom-submenu-height*1px;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive ul li:hover li a{
+	background: @custom-bg-color-sub;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive ul li:hover li a:hover{
+	background: @custom-bg-color-hover-sub;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive:hover li ul{
+	left:@custom-submenu-width*1px;
+	display:none;
+	position:relative;
+	margin-top:@custom-submenu-height*-1px;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive:hover li:hover ul{
+	display:block;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive:hover li:hover ul ul{
+	display:none;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive:hover li ul li:hover ul{
+	display:block;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive li ul li:hover ul ul{
+	display:none;
+	cursor: pointer;
+}
+
+.navigation-main ul li.dropactive li ul li:hover ul li ul{
+	display:block;
+	cursor: pointer;
+}
+
+.navigation-main{
+	position: relative;
+	width: auto;
+}
+
+.navigation-main{
+	&.sticky{
+		position: fixed;
+		width:100%;
+		top: 0;
+		z-index:9999;
+	}
+}
